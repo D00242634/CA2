@@ -37,9 +37,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
-(1, 'Category 1'),
-(2, 'Category 2'),
-(3, 'Category 3');
+(1, 'Fish'),
+(2, 'Dogs'),
+(3, 'Cats');
 
 -- --------------------------------------------------------
 

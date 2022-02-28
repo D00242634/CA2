@@ -47,15 +47,33 @@ include('includes/header.php');
 <aside>
 <!-- display a list of categories -->
 <h2>Categories</h2>
-<nav>
-<ul>
-<?php foreach ($categories as $category) : ?>
-<li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand">Categories    </a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+    <?php foreach ($categories as $category) : ?>
+<li class="nav-link" ><a href=".?category_id=<?php echo $category['categoryID']; ?>">
 <?php echo $category['categoryName']; ?>
 </a>
 </li>
 <?php endforeach; ?>
-</ul>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
 </nav>          
 </aside>
 
@@ -66,6 +84,7 @@ include('includes/header.php');
 <tr>
 <th>Image</th>
 <th>Name</th>
+<th>Seller</th>
 <th>Price</th>
 <th>Delete</th>
 <th>Edit</th>
@@ -74,6 +93,7 @@ include('includes/header.php');
 <tr>
 <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $record['name']; ?></td>
+<td><?php echo $record['Seller']; ?></td>
 <td class="right"><?php echo $record['price']; ?></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
