@@ -14,7 +14,7 @@ $statement->closeCursor();
 include('includes/header.php');
 ?>
         <h1>Add Record</h1>
-        <form action="add_record.php" method="post" enctype="multipart/form-data"
+        <form action="add_record.php" method="post" enctype="multipart/form-data" class="form-control form-control-lg"
               id="add_record_form">
 
             <label>Category:</label>
@@ -26,23 +26,22 @@ include('includes/header.php');
             <?php endforeach; ?>
             </select>
             <br>
-            <label>Name:</label>
+            <label class="row g-3 col-auto form-label">Name:</label>
             <input type="input" name="name">
             <br>
 
-            <label>Seller:</label>
+            <label class="row g-3 col-auto form-label" >Seller:</label>
             <input type="input" name="Seller">
             <br> 
 
-            <label>List Price:</label>
+            <label class="row g-3 col-auto form-label">List Price:</label>
             <input type="input" name="price">
             <br>        
-            
-            <label>Image:</label>
+            <br>
+            <label class="form-label">Image:</label>
             <input type="file" name="image" accept="image/*" />
             <br>
-            
-            <label>&nbsp;</label>
+            <br>
             <input type="submit" value="Add Record">
             <br>
         </form>

@@ -66,9 +66,11 @@ include('includes/header.php');
 
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+      
+    <a href="add_record_form.php" class="button54" role="button">Add Record</a>
+    <a href="category_list.php" class="button54" role="button">Manage Categories</a></p>
+   
+  </form>
   </div>
 </nav>
 
@@ -80,28 +82,30 @@ include('includes/header.php');
 <section>
 <!-- display a table of records -->
 <h2><?php echo $category_name; ?></h2>
-<table>
+<table class="table table-light"> 
 <tr>
-<th>Image</th>
-<th>Name</th>
-<th>Seller</th>
-<th>Price</th>
-<th>Delete</th>
-<th>Edit</th>
+<th scope="col">Image</th>
+<th scope="col">Name</th>
+<th scope="col">Seller</th>
+<th scope="col">Price</th>
+<th scope="col">Details</th>
+<th scope="col">Delete</th>
+<th scope="col">Edit</th>
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
-<td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
+<td scope="row"><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $record['name']; ?></td>
-<td><?php echo $record['Seller']; ?></td>
+<td><?php echo $record['seller']; ?></td>
 <td class="right"><?php echo $record['price']; ?></td>
+<td><?php echo $record['details']; ?></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
 <input type="hidden" name="record_id"
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Delete">
+<input type="submit" class="button45" value="Delete">
 </form></td>
 <td><form action="edit_record_form.php" method="post"
 id="delete_record_form">
@@ -109,13 +113,11 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Edit">
+<input type="submit" class="button45" value="Edit">
 </form></td>
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_record_form.php">Add Record</a></p>
-<p><a href="category_list.php">Manage Categories</a></p>
 </section>
 <?php
 include('includes/footer.php');
