@@ -9,7 +9,7 @@
 
 <!-- the body section -->
 <body>
-    <header><h1>My Guitar Shop</h1></header>
+    <header><h1>NOT ETSY</h1></header>
 
     <main>
         <h2 class="top">OOPSIE WOOPSIE SOMETHING WENT WRONG</h2>
