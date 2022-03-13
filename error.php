@@ -3,7 +3,7 @@
 
 <!-- the head section -->
 <head>
-    <title>My Guitar Shop</title>
+    <title>NOT ETSY</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -12,12 +12,12 @@
     <header><h1>My Guitar Shop</h1></header>
 
     <main>
-        <h2 class="top">Error</h2>
+        <h2 class="top">OOPSIE WOOPSIE SOMETHING WENT WRONG</h2>
         <p><?php echo $error; ?></p>
     </main>
 
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> My Guitar Shop, Inc.</p>
+        <p>&copy; <?php echo date("Y"); ?> NOT ETSY</p>
     </footer>
 </body>
 </html>

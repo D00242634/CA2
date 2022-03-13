@@ -35,13 +35,18 @@ include('includes/header.php');
 
             
             <label>Seller:</label>
-            <input type="input" name="Seller"
-                   value="<?php echo $records['Seller']; ?>">
+            <input type="input" name="seller"
+                   value="<?php echo $records['seller']; ?>">
             <br>
 
             <label>List Price:</label>
             <input type="input" name="price"
                    value="<?php echo $records['price']; ?>">
+            <br>
+
+            <label>Details:</label>
+            <input type="input" name="details"
+                   value="<?php echo $records['details']; ?>">
             <br>
 
             <label>Image:</label>

@@ -30,13 +30,18 @@ include('includes/header.php');
             <input type="input" name="name">
             <br>
 
-            <label class="row g-3 col-auto form-label" >Seller:</label>
-            <input type="input" name="Seller">
+            <label class="row g-3 col-auto form-label" >seller:</label>
+            <input type="input" name="seller">
             <br> 
 
             <label class="row g-3 col-auto form-label">List Price:</label>
             <input type="input" name="price">
             <br>        
+
+            <label class="row g-3 col-auto form-label" >details:</label>
+            <input type="input" name="details">
+            <br> 
+
             <br>
             <label class="form-label">Image:</label>
             <input type="file" name="image" accept="image/*" />

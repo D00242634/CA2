@@ -37,9 +37,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
-(1, 'Fish'),
-(2, 'Dogs'),
-(3, 'Cats');
+(1, 'Ring'),
+(2, 'Necklace'),
+(3, 'Earring');
 
 -- --------------------------------------------------------
 
@@ -62,18 +62,25 @@ CREATE TABLE `records` (
 --
 
 INSERT INTO `records` (`recordID`, `categoryID`, `name`,`seller`, `price`, `image`,`details`) VALUES
-(1, 1, 'Some text', 'Some text', '12.00', '644471.jpg','details'),
-(2, 1, 'Some text', 'Some text', '15.00', '233012.jpg','details'),
-(3, 1, 'Some text', 'Some text', '18.00', '329484.jpg','details'),
-(4, 1, 'Some text', 'Some text', '10.00', '644055.jpg','details'),
-(5, 2, 'Some text', 'Some text', '16.00', '373465.jpg','details'),
-(6, 2, 'Some text', 'Some text', '19.00', '373989.jpg','details'),
-(7, 2, 'Some text', 'Some text', '12.00', '374104.jpg','details'),
-(8, 2, 'Some text', 'Some text', '10.00', '4733.jpg','details'),
-(9, 2, 'Some text', 'Some text', '15.00', '834551.jpg','details'),
-(10, 3, 'Some text', 'Some text', '13.00', '908783.jpg','details'),
-(11, 3, 'Some text', 'Some text', '17.00', '835545.jpg','details'),
-(12, 3, 'Some text', 'Some text', '19.00', '119273.jpg','details');
+(1, 1, 'Double Layer', 'Joe Bloggs', '12.00', 'ring1.jpg','Sterling Silver 925'),
+(2, 1, '14 Piece Vintage Silver Ringset', 'Gadisa Miĥaelo', '50.25', 'ring2.jpg','Sun Moon Leaf Charm Ring Set For Women'),
+(3, 1, 'Pastel Mint', 'Saraid Neassa', '13.00', 'ring3.jpg','Resin Ring Rose Gold Flakes Small'),
+(4, 1, 'Birth Flower Ring,', 'Étaín Comhghán', '62.05', 'ring4.jpg','Sterling Silver Ring Custom Flower Ring'),
+(5, 1, 'Open Circle Ring ', 'Brendan Anatolijs', '13.99', 'ring5.jpg','Rose Gold Minimalistic'),
+(6, 1, 'Demon Slayer', 'Zora Kristupas', '15.70', 'ring6.jpg','Resizable Sterling Silver Ring'),
+(7, 1, 'Flower band ', 'Gethin Martins', '33.60', 'ring7.jpg','Small sterling silver ring solid 925'),
+
+
+(8, 2, 'Birthstone Personalised Necklace', 'Elizabete Assumpta', '35.50', 'neck1.jpg','Esme Initial Birthstone Personalised Necklace'),
+(9, 2, 'Golden Sun Necklace', 'Ludis Emlyn', '25.30', 'neck2.jpg','Golden Sun Necklace no chain included'),
+(10, 2, 'Sterling Silver Name Necklace', 'Olwyn Edvīns', '12.12', 'neck3.jpg','Custom Name Jewelry, Personalized Gift,'),
+(11, 2, 'Antique Micromosaic Necklace ', 'Eduards Deaglán', '1672.24', 'neck4.jpg','14k Pendant on Optional 14k Gold Chain'),
+(12, 2, 'Heart of Ocean Heart Blue', 'Eliška Nora', '32.10', 'neck5.jpg',' 28.5 Carat'),
+
+
+(13, 3, 'Tiny Simple Hoop Earrings', 'Carys Damhán', '12.11', 'ear1.jpg','14k Gold Dainty Earrings'),
+(14, 3, 'Dried flower handmade resin earrings', 'Elžbieta Ffraid', '7.50', 'ear2.jpg','real flower jewelry, gifts for her'),
+(15, 3, 'Abstract Forget-me-nots', 'Elin Jitka', '19.35', 'ear3.jpg','Face Gold plated Earrings handmade with pressed flowers');
 
 --
 -- Indexes for dumped tables
